@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- website title -->
+    <title>penguin fashion</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./icons/Group.png" type="image/x-icon">
+    <!-- tailwind cdn -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-yellow-200">
+        <!-- nav section  -->
+        <section>
+            <nav class="bg-white shadow-lg">
+                <div class="lg:px-14 mx-auto px-4">
+                    <div class="flex justify-between">
+                        <div class="flex justify-between space-x-7">
+                            <div>
+                                <!-- Website Logo -->
+                                <a href="#" class="flex items-center py-4 px-2">
+                                    <img src="./icons/Group 33072.png" alt="Logo" class="w-64 mr-2">
+                                    <!-- <span class="font-semibold text-gray-500 text-lg">Navigation</span> -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex items-center space-x-3">
+                            <a href=""
+                                class="py-4 px-2 text-yellow-500 border-b-4 border-green-500 font-semibold ">Home</a>
+                            <a href=""
+                                class="py-4 px-2 text-yellow-500 font-semibold hover:text-indigo-600 transition duration-300">Services</a>
+                            <a href=""
+                                class="py-4 px-2 text-yellow-500 font-semibold hover:text-indigo-600 transition duration-300">About</a>
+                            <a href=""
+                                class="py-4 px-2 text-yellow-500 font-semibold hover:text-indigo-600 transition duration-300">Contact
+                                Us</a>
+                        </div>
+                        <!-- Mobile menu button -->
+                        <div class="md:hidden flex items-center">
+                            <button class="outline-none mobile-menu-button">
+                                <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile menu -->
+                <div class="hidden mobile-menu">
+                    <ul class="">
+                        <li class="active"><a href="index.html"
+                                class="block text-sm px-2 py-4 text-white bg-yellow-400 font-semibold">Home</a></li>
+                        <li><a href="#services"
+                                class="block text-sm px-2 py-4 hover:bg-yellow-400 transition duration-300">Services</a>
+                        </li>
+                        <li><a href="#about"
+                                class="block text-sm px-2 py-4 hover:bg-yellow-400 transition duration-300">About</a>
+                        </li>
+                        <li><a href="#contact"
+                                class="block text-sm px-2 py-4 hover:bg-yellow-400 transition duration-300">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+                <script>
+                    const btn = document.querySelector("button.mobile-menu-button");
+                    const menu = document.querySelector(".mobile-menu");
+                    btn.addEventListener("click", () => {
+                        menu.classList.toggle("hidden");
+                    });
+                </script>
+            </nav>
+        </section>
+        <!-- nav section end -->
+        <!-- banner section -->
+        <section class="container lg:flex items-center px-4 mx-auto py-12">
+            <div class="space-y-5">
+                <h1 class="text-6xl font-bold uppercase"> <span class="text-yellow-600">BE ThE PENGuIN OF</span>  <br>
+                    <span class="text-gray-600">THE WINTER</span>
+                </h1>
+                <p class="w-4/5 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, enim?</p>
+                <button type="submit" class="text-white px-8 py-3 rounded-2xl text-2xl bg-gradient-to-r from-green-400 to-blue-500 uppercase"><svg class="w-6 h-6 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokelinecap="round" strokelinejoin="round" strokewidth="{2}" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+                Buy now
+                </button>
+            </div>
+            <div>
+                <img class="lg:ml-28" src="./images/model.png" alt="">
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- woman jacket section -->
+        <section class="container mx-auto px-4 py-5">
+            <h1 class="text-4xl uppercase font-bold text-gray-600">woman jacket</h1>
+            <!-- womane jacket group -->
+            <div class="lg:grid grid-cols-3 gap-10">
+                <!-- single jacket group -->
+                <div class="px-5 py-5 shadow-lg rounded-2xl space-y-3">
+                    <div class="bg-gray-400 rounded-2xl p-6">
+                        <img class="h-64 mx-auto" src="./images/jacket-1.png" alt="">
+                    </div>
+                    <div class=" space-y-3">
+                        <h3 class="text-3xl font-bold text-gray-600">Yello Coat Jacket</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, beatae.</p>
+                        <div>
+                            <div class="flex justify-between">
+                                <h1 class="font-bold text-3xl text-blue-600">$210</h1>
+                                <button type="submit" class="text-white px-6 py-2 rounded-2xl text-2xl bg-gradient-to-r from-green-400 to-blue-500 uppercase">
+                                    <svg class="w-6 h-6 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokelinecap="round" strokelinejoin="round" strokewidth="{2}" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                Buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-5 py-5 shadow-lg rounded-2xl space-y-3">
+                    <div class="bg-gray-400 rounded-2xl p-6">
+                        <img class="h-64 mx-auto" src="./images/jacket-2.png" alt="">
+                    </div>
+                    <div class=" space-y-3">
+                        <h3 class="text-3xl font-bold text-gray-600">Yellow Coat Jacket</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, beatae.</p>
+                        <div>
+                            <div class="flex justify-between">
+                                <h1 class="font-bold text-3xl text-blue-600">$210</h1>
+                                <button type="submit" class="text-white px-6 py-2 rounded-2xl text-2xl bg-gradient-to-r from-green-400 to-blue-500 uppercase">
+                                    <svg class="w-6 h-6 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokelinecap="round" strokelinejoin="round" strokewidth="{2}" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                Buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-5 py-5 shadow-lg rounded-2xl space-y-3">
+                    <div class="bg-gray-400 rounded-2xl p-6">
+                        <img class="h-64 mx-auto" src="./images/jacket-3.png" alt="">
+                    </div>
+                    <div class=" space-y-3">
+                        <h3 class="text-3xl font-bold text-gray-600">Yello Coat Jacket</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, beatae.</p>
+                        <div>
+                            <div class="flex justify-between">
+                                <h1 class="font-bold text-3xl text-blue-600">$210</h1>
+                                <button type="submit" class="text-white px-6 py-2 rounded-2xl text-2xl bg-gradient-to-r from-green-400 to-blue-500 uppercase">
+                                    <svg class="w-6 h-6 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokelinecap="round" strokelinejoin="round" strokewidth="{2}" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                Buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- man section -->
+        <section class="container mx-auto px-4 py-5">
+            <h1 class="text-4xl uppercase font-bold text-gray-600">Man jacket</h1>
+            <!-- womane jacket group -->
+            <div class="lg:grid grid-cols-3 gap-10">
+                <!-- single jacket group -->
+                <div class="px-5 py-5 shadow-lg rounded-2xl space-y-3">
+                    <div class="bg-gray-400 rounded-2xl p-6">
+                        <img class="h-64 mx-auto" src="./images/jacket-4.png" alt="">
+                    </div>
+                    <div class=" space-y-3">
+                        <h3 class="text-3xl font-bold text-gray-600">Shanow Coat Jacket</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, beatae.</p>
+                        <div>
+                            <div class="flex justify-between">
+                                <h1 class="font-bold text-3xl text-blue-600">$210</h1>
+                                <button type="submit" class="text-white px-6 py-2 rounded-2xl text-2xl bg-gradient-to-r from-green-400 to-blue-500 uppercase">
+                                    <svg class="w-6 h-6 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokelinecap="round" strokelinejoin="round" strokewidth="{2}" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                Buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-5 py-5 shadow-lg rounded-2xl space-y-3">
+                    <div class="bg-gray-400 rounded-2xl p-6">
+                        <img class="h-64 mx-auto" src="./images/jacket-5.png" alt="">
+                    </div>
+                    <div class=" space-y-3">
+                        <h3 class="text-3xl font-bold text-gray-600">Man Ltether Jacket</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, beatae.</p>
+                        <div>
+                            <div class="flex justify-between">
+                                <h1 class="font-bold text-3xl text-blue-600">$210</h1>
+                                <button type="submit" class="text-white px-6 py-2 rounded-2xl text-2xl bg-gradient-to-r from-green-400 to-blue-500 uppercase">
+                                    <svg class="w-6 h-6 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokelinecap="round" strokelinejoin="round" strokewidth="{2}" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                Buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-5 py-5 shadow-lg rounded-2xl space-y-3">
+                    <div class="bg-gray-400 rounded-2xl p-6">
+                        <img class="h-64 mx-auto" src="./images/jacket-6.png" alt="">
+                    </div>
+                    <div class=" space-y-3">
+                        <h3 class="text-3xl font-bold text-gray-600">Man Casual Jacket</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, beatae.</p>
+                        <div>
+                            <div class="flex justify-between">
+                                <h1 class="font-bold text-3xl text-blue-600">$210</h1>
+                                <button type="submit" class="text-white px-6 py-2 rounded-2xl text-2xl bg-gradient-to-r from-green-400 to-blue-500 uppercase">
+                                    <svg class="w-6 h-6 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokelinecap="round" strokelinejoin="round" strokewidth="{2}" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                Buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sell section -->
+        <section class="container px-4 mx-auto mt-5">
+            <div class="lg:grid grid-cols-2 items-center">
+            <div class="lg:order-2">
+                <img class="lg:ml-5 md:my-5" src="./images/shopping.png" alt="shopping picture">
+            </div>
+                <div class="lg:order-1">
+                    <div class="flex shadow-lg rounded-2xl py-5">
+                        <img width="80" class="p-1 mx-auto" src="./icons/image 12.png" alt="">
+                        <div class="ml-5">
+                            <h1 class="text-2xl font-bold text-gray-600">Find of perfecto Fit</h1>
+                            <p class="text-gray-600 w-3/4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ullam.</p>
+                        </div>
+                    </div>
+                    <div class="flex shadow-lg rounded-2xl py-5">
+                        <img width="80" class="p-1 mx-auto" src="./icons/image 13.png" alt="">
+                        <div class="ml-5">
+                            <h1 class="text-2xl font-bold text-gray-600">Find of perfecto Fit</h1>
+                            <p class="text-gray-600 w-3/4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ullam.</p>
+                        </div>
+                    </div>
+                    <div class="flex shadow-lg rounded-2xl py-5">
+                        <img width="80" class="p-1 mx-auto" src="./icons/image 14.png" alt="">
+                        <div class="ml-5">
+                            <h1 class="text-2xl font-bold text-gray-600">Find of perfecto Fit</h1>
+                            <p class="text-gray-600 w-3/4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ullam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="px-4 mx-auto py-4">
+        <section class="text-center text-gray-600">
+            <p>&copy;2021 - 2022 All Copyright by Swapon</p>
+        </section>
+    </footer>
+</body>
+
+</html>
